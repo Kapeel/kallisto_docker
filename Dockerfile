@@ -19,4 +19,12 @@ RUN git clone https://github.com/pachterlab/kallisto.git \
 && make \
 && make install 
 
+ENTRYPOINT ["kallisto","index","-i"]
+CMD["-k"]
+
+ENTRYPOINT ["kallisto","quant","-i","-o"]
+CMD["-l","-b","-t"]
+
+ENTRYPOINT ["kallisto","h5dump","-o"]
+
 
