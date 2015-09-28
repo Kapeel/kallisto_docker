@@ -20,11 +20,11 @@ RUN git clone https://github.com/pachterlab/kallisto.git \
 && make install 
 
 ENTRYPOINT ["kallisto","index","-i"]
-CMD["-k"]
+#CMD["-k"]
 
-ENTRYPOINT ["kallisto","quant","-i","-o"]
-CMD["-l","-b","-t"]
+#ENTRYPOINT ["kallisto","quant","-i","-o"]
+#CMD["-l","-b","-t"]
 
-ENTRYPOINT ["kallisto","h5dump","-o"]
+#ENTRYPOINT ["kallisto","h5dump","-o"]
 
 
