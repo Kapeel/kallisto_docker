@@ -6,8 +6,8 @@ FROM      ubuntu:14.04.3
 MAINTAINER Kapeel Chougule
 
 LABEL Description="This image is used for running Kallisto RNA seq qauntification tool "
-RUN apt-get update && apt-get install -y build-essential cmake zlib1g-dev libhdf5-dev
-
+RUN apt-get update && apt-get install -y build-essential cmake zlib1g-dev 
+#libhdf5-dev pkg-config liblzma-dev apt-get install libbz2-dev curl unzip
 
 
 
